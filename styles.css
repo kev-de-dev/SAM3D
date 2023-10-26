@@ -1,0 +1,176 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ padding :25px;
+  background-color: #484343;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+nav {
+  margin-top: 15px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff0000;
+}
+
+.title-h1, .sub-title, .services {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sub-title p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.services p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fas {
+  margin-right: 10px;
+}
+
+main {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.intervention {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+aside {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+aside h3 {
+  margin-bottom: 20px;
+}
+
+.btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn a:hover {
+  background-color: #d90000;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contactez-moi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.contactez-moi i {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      margin-bottom: 10px;
+  }
+
+  .intervention {
+      flex-direction: column;
+  }
+}
+/*page contact */
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.section-contact form {
+  flex-direction: column;
+  display: flex;
+}
