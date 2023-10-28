@@ -1,4 +1,13 @@
 /* Reset CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Bebas+Neue&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Bebas+Neue&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +15,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
@@ -16,24 +25,44 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
   position: relative;
+  padding-bottom: 12px;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
- padding :25px;
+ padding :20px;
   background-color: #484343;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 3rem;;
   font-weight: bold;
+  font-style:italic;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  padding:16px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-color: #3b2b2b62;
 }
+.logo :hover{
+  background-color: #f1060662;
+
+}
+span {
+  color: #ff0000;
+font-weight: bold;
+font-style:italic;
+}
+
+
 nav {
   margin-top: 15px;
+  
 }
 nav ul {
   display: flex;
@@ -78,6 +107,26 @@ nav a:hover {
 main {
   padding: 40px 20px;
   background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  margin-top: 40px;
+  margin: 5%;
+}
+.main-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  width: 66%;
+  margin: 5%;
+  padding: 5%;
+  border-left: solid 1px #333;
 }
 
 h1, h2, h3 {
@@ -132,13 +181,20 @@ footer {
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  text-decoration: none;
+}
+footer span , i {
+  color: #fff;
+  text-decoration: none
 }
 
 .contactez-moi {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .contactez-moi i {
